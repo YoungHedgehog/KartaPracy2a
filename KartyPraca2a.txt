@@ -1,0 +1,118 @@
+KP2a1
+int a = int.Parse(Console.ReadLine());
+int b= int.Parse(Console.ReadLine());
+int c = a + b;
+if (c % 2 == 0)
+{
+    Console.WriteLine("jest liczba parzysta");
+}
+else
+{
+    Console.WriteLine("nie jest parzysta");
+}
+
+
+
+
+KP2a2
+int a = int.Parse(Console.ReadLine());
+int g = int.Parse(Console.ReadLine());
+int srart, srgeo;
+srart = (a + g) / 2;
+srgeo = a * g;
+Math.Sqrt(srgeo);
+if (srart > srgeo)
+{
+    Console.WriteLine("Średnia arytmetyczna jest większa");
+}
+else
+{
+    Console.WriteLine("Średnia geometryczna jest większa");
+}
+
+
+
+
+KP2a3
+int k = int.Parse(Console.ReadLine());
+int l = int.Parse(Console.ReadLine());
+int m = int.Parse(Console.ReadLine());
+if (k == l)
+{
+    Console.WriteLine("TAK: " + k);
+}
+else if (k == m)
+{
+    Console.WriteLine("TAK: " + k);
+}
+else if (l == m)
+{
+    Console.WriteLine("TAK: " + l);
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+
+
+
+KP2a4
+int a=int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+int d = int.Parse(Console.ReadLine());
+int[] tablica = { a, b, c, d };
+Array.Sort(tablica);
+Console.WriteLine("Najwieksza liczba:" + tablica[0]);
+
+
+
+
+KP2a5
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+if (a < b + c && b < a + c && c < a + b)
+{
+    Console.WriteLine("TAK");
+}
+else
+{
+    Console.WriteLine("NIE");
+}
+
+
+
+
+KP2a6
+int a=int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+if (a + b + c == 180)
+{
+    if (90 > a && 90 > b && 90 > c)
+    {
+        Console.WriteLine("Trójkąt Ostrokątny");
+    }
+    if (90 > a && 90 > b && 90 == c)
+    {
+        Console.WriteLine("Trójkąt Prostokątny");
+    }
+    if (90 < a && 90 > b && 90 > c)
+    {
+        Console.WriteLine("Trójkąt Rozwartokątny");
+    }
+    else if (90 > a && 90 < b && 90 > c)
+    {
+        Console.WriteLine("Trójkąt Rozwartokątny");
+    }
+    else if (90 > a && 90 > b && 90 < c)
+    {
+        Console.WriteLine("Trójkąt Rozwartokątny");
+    }
+}
+else
+{
+    Console.WriteLine("Nie da się zrobić z tych kątów trójkąta");
+}
